@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>소개</title>
+    <style>
+        h1{
+            color:beige;
+            border-radius: 30px;
+            background: rgba(73,155,234,1);
+            background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 13%, rgba(32,124,229,1) 65%, rgba(32,124,229,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(13%, rgba(73,155,234,1)), color-stop(65%, rgba(32,124,229,1)), color-stop(100%, rgba(32,124,229,1)));
+            background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 13%, rgba(32,124,229,1) 65%, rgba(32,124,229,1) 100%);
+            background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 13%, rgba(32,124,229,1) 65%, rgba(32,124,229,1) 100%);
+            background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 13%, rgba(32,124,229,1) 65%, rgba(32,124,229,1) 100%);
+            background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 13%, rgba(32,124,229,1) 65%, rgba(32,124,229,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+        }
+        p{
+            color:brown;
+        }
+        ul{
+            overflow:hidden;
+        }
+
+        th{
+            background: dodgerblue;
+        }
+
+        .floating-box {
+
+            display: inline-block;
+            width: 300px;
+            margin: 10px;
+            border: 3px solid deepskyblue;
+            float: left;
+            box-shadow: 5px 5px 5px gray;
+
+        }
+        .font_center{text-align: center;}
+        .floating-box1{
+            display: inline-block;
+            height: 300px;
+            margin: 10px;
+            border: 3px solid deepskyblue;
+            float: left;
+            box-shadow: 5px 5px 5px gray;
+            position: relative;
+            overflow-y: scroll;
+        }
+
+    </style>
+    <script>
+        alert('아프리카 둥둥섬 왕위 계승자 라이언!')
+    </script>
+</head>
+<body>
+
+<div  class="floating-box" >
+<h1 id="menu" class="font_center">메뉴</h1>
+<ol>
+    <a href="#name_1"><li>이름</li></a>
+    <br />
+    <a href="#like"><li>좋아하는 것</li></a>
+    <br />
+    <a href="#fet"><li>특징</li></a>
+    <br />
+    <a href="http://naver.com"><li>네이버</li> </a>
+    <br />
+    <a href="http://jylecture.blogspot.kr"><li>교수님 블로그</li></a>
+    <br />
+</ol>
+</div>
+
+<div class="floating-box1">
+<h1 id="name_1" class="font_center"><b>라이언</b></h1>
+<img src="lion.PNG" width="300">
+<ul>
+    <li> <sub>갈기가 없는게</sub> <i> 컴플랙스</i></li>
+    <li> <sup>무뚝뚝해 보여도</sup> <ins>섬세하다</ins></li>
+    <li> <i>믿음직한 조언자</i></li>
+</ul>
+<a href="#menu">메뉴로</a>
+<br />
+    </div>
+ <div class="floating-box">
+<h1 id="like" class="font_center"> 좋아하는 것</h1>
+<ul>
+    <li> <del>TV 보기</del></li>
+</ul>
+<a href="#menu">메뉴로</a>
+<br />
+        </div>
+
+ <div class="floating-box">
+<h1 id="fet" class="font_center"> 특징</h1>
+<ul>
+    <li> 꼬리가&nbsp; 짧다 </li>
+    <li> &lt;자유를 동경한다&gt;</li>
+</ul>
+<a href="#menu">메뉴로</a>
+<br />
+</div>
+     <div class="floating-box">
+<h1 class="font_center">댓글 남기기</h1>
+
+<form>
+    <fieldset>
+        <legend>작성자 정보</legend>
+        <table>
+            <tr>
+                <td><label for="name">닉네임 : </label></td>
+                <td><input id="name" type="text"/></td>
+            </tr>
+            <tr>
+                <td><label for="password">비밀번호 : </label></td>
+                <td><input id="password" type="password"/></td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="man" type="radio" name="gender" value="m"/>
+                    <lable for="man">남</lable>
+
+                    <input id="woman" type="radio" name="gender" value="w"/>
+                    <label for="woman">여</label>
+                </td>
+            </tr>
+        </table>
+
+    </fieldset>
+    <br/>
+    <fieldset>
+        <legend>내용</legend>
+            <textarea cols="30" rows="5">
+HELLO
+HTML 5
+CSS
+
+            </textarea>
+        <br/>
+        <tr>
+            <td>
+                <input id="likes" type="radio" name="feel" value="l"/>
+                <lable for="likes">좋아요</lable>
+                <input id="hates" type="radio" name="feel" value="h"/>
+                <label for="hates">싫어요</label>
+                <input id="dotno" type="radio" name="feel" value="d"/>
+                <label for="dotno">몰라요</label>
+            </td>
+        </tr>
+    </fieldset>
+    <br/>
+    <input type="reset" value="다시">
+    <input type="submit" value="쓰기">
+</form>
+         </div>
+
+
+</body>
+</html>
+
+
