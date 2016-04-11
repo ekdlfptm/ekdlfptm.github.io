@@ -1,2 +1,168 @@
 
 
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <title>윤정's Blog</title>
+    <style>
+        body {
+            width: 800px;
+            background-image: url("Background.PNG");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+        .Heading{
+            width: 800px;
+            margin: 0 auto;
+        }
+        h1{
+            text-shadow: 5px 5px 5px grey, 5px 5px 10px blue;
+        }
+        #name1{
+            text-decoration:none;
+            color: lightblue;
+        }
+        .menu{
+            height: 50px;
+            overflow: hidden;
+        }
+        #menu1{
+            list-style: none;
+            width: 160px;
+            text-align: center;
+            float: left;
+            padding: 10px;;
+            border-radius: 5px;
+            border-color: black;
+            border-style: outset;
+        }
+        #mini:hover {color: deepskyblue}
+        #mini:active {color: dodgerblue}
+        #menu1:nth-child(2n){
+            background-color: deepskyblue;
+        }
+        #menu1:nth-child(2n+1){
+            background-color: dodgerblue;
+        }
+        #mini{
+            text-decoration: none;
+            text-overflow: ellipsis;
+            color: black;
+        }
+        #Search{
+            width:500px;
+            float: right;
+        }
+        .MainBox{
+            background-color:cornflowerblue;
+            width: 580px;
+            float: left;
+            margin: 0 10px;
+            height: 600px;
+            border-radius: 5px;
+            line-height: 30px;
+            box-shadow: 5px 5px 5px grey;
+            overflow-y: scroll;
+        }
+        .SubBox{
+            background-color: lightskyblue;
+            width: 200px;
+            float: left;
+            border-radius: 5px;
+            line-height: 20px;
+            box-shadow: 5px 5px 5px grey;
+        }
+        #player{
+            width: 200px;
+            height: 30px;
+            float: right;
+            box-shadow: 5px 5px 5px lightgrey;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .SubBox2{
+            background-color: lightskyblue;
+            box-shadow: 5px 5px 5px lightgrey;
+            width: 800px;
+        }
+        #SubBox2_2{
+            width: 200px;
+            height: 230px;
+            background-color:lightskyblue;
+            float: right;
+            text-align: center;
+            box-shadow: 5px 5px 5px lightgrey;
+            border-radius: 5px;
+            text-shadow: 5px 5px 5px grey, 5px 5px 10px lightgrey;
+        }
+
+
+    </style>
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+</head>
+<body>
+<section class="Heading">
+    <h1><a href="http://ekdlfptm.github.io/" id="name1">윤정's Blog</a></h1>
+    <hr>
+    <ul class="menu">
+        <li id="menu1"><a href="introduce.html" id="mini">간단한 소개</a></li>
+        <li id="menu1" style="background-color: darkblue">내가 만든 작품</li>
+        <li id="menu1"><a href="Class.html" id="mini">1학기 수업 시간표</a></li>
+        <li id="menu1"><a href="Page.html" id="mini"">자주 사용하는 페이지</a></li>
+    </ul>
+    <hr>
+    <form id="Search">
+        <input type="text" name="search" />
+        <input type="submit" value="검색"/>
+    </form>
+</section><br><hr>
+<Section>
+    <div class="MainBox">
+       <h2 style="background-color: whitesmoke">2013년</h2>
+        <p>
+            <a href="http://cafe.naver.com/dasom2015/12">커플 브레이킹</a>
+        </p>
+        <h2 style="background-color: whitesmoke">2014년</h2>
+        <p>
+            <a href="https://www.youtube.com/watch?v=YkbitrqZ2JU">화이트</a>
+        </p>
+        <p>
+            <a href="https://www.youtube.com/watch?v=1R1KCT0WnJk">말 한마디의 영향력</a>
+        </p>
+        <p>
+            <a href="https://www.youtube.com/watch?v=8beSuQPVNrU">Matryoshka</a>
+        </p>
+        <h2 style="background-color: whitesmoke">2015년</h2>
+        <p>
+            <a href="http://movie.naver.com/movie/bi/mi/basic.nhn?code=147872">귀신의 향기</a>
+        </p>
+    </div>
+    <div class="SubBox">
+        <ul style="font-size: smaller">
+            <li>소개</li>
+            <ol>
+                <li>이름 및 학력사항</li>
+                <li>좋아하는 것</li>
+                <li>취미 및 특기</li>
+            </ol>
+            <li>내가 만든 작품</li>
+            <li>1학기 수업 시간표</li>
+            <li>자주 사용하는 페이지</li>
+        </ul>
+    </div>
+</Section>
+<section class="SubBox2">
+    <div class="player">
+        <audio src="single.mp3" controls="controls" autoplay="autoplay" loop="loop" id="player" ></audio>
+    </div>
+    <div id="SubBox2_2">
+        <image src="ekdlfptm.github.io/weather.PNG"></image>
+    </div>
+</section>
+
+</body>
+</html>
