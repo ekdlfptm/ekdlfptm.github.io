@@ -1,8 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="Ko">
 <head>
-  <title>HTML</title>
+    <meta charset="UTF-8">
+    <title>윤정's Blog</title>
+    <style>
+        body {
+            width: 800px;
+            background-image: url("Background.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+        ;
+            margin: auto;
+
+        }
+        .Heading{
+            width: 800px;
+            margin: 0 auto;
+        }
+        h1{
+            text-shadow: 5px 5px 5px grey, 5px 5px 10px blue;
+        }
+        #name1{
+            text-decoration: none;
+            color: lightblue;
+        }
+        .menu{
+            height: 50px;
+            overflow: hidden;
+        }
+        #menu1{
+            list-style: none;
+            width: 160px;
+            text-align: center;
+            float: left;
+            padding: 10px;;
+            border-radius: 5px;
+            border-color: lightgrey;
+            border-style: outset;
+        }
+        #menu1-1:hover {color: fuchsia}
+        #menu1-1:active {color: darkblue}
+        #menu1:nth-child(2n){
+            background-color: beige;
+        }
+        #menu1:nth-child(2n+1){
+            background-color: ivory;
+        }
+        #menu1-1{
+            text-decoration: none;
+            text-overflow: ellipsis;
+            color: black;
+        }
+        #SearchBar{
+            width: 600px;
+            float: left;
+        }
+        #hansung{
+            width: 130px;
+            float: right;
+            text-decoration: none;
+            font-size: small;
+        }
+        .MainSection{
+            background-color: beige;
+            width: 580px;
+            float: left;
+            margin: 0 10px;
+            height: 600px;
+            border-radius: 5px;
+            line-height: 600px;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .SubSection{
+            background-color: beige;
+            width: 200px;
+            float: left;
+            border-radius: 5px;
+            line-height: 20px;
+            box-shadow: 5px 5px 5px grey;
+        }
+        #player{
+            width: 200px;
+            height: 30px;
+            float: right;
+            box-shadow: 5px 5px 5px lightgrey;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .SubSection2{
+            background-color: beige;
+            box-shadow: 5px 5px 5px lightgrey;
+            width: 800px;
+        }
+        #SubSection2-2{
+            width: 200px;
+            height: 230px;
+            background-color: beige;
+            float: right;
+            text-align: center;
+            box-shadow: 5px 5px 5px lightgrey;
+            border-radius: 5px;
+            text-shadow: 5px 5px 5px grey, 5px 5px 10px lightgrey;
+        }
+        #pic1{
+            box-shadow: 5px 5px 5px lightgrey;
+            border-radius: 10px;
+
+        }
+        .Bot{
+            width: 790px;
+            height: 600px;
+            box-shadow: 5px 5px 5px lightgrey;
+            border-radius: 5px;
+            background-color: beige;
+            margin: 10px 0;
+            float: right;
+
+        }
+        .sect{
+            width: 240px;
+            height: 250px;
+            background-color: blanchedalmond;
+            box-shadow: 5px 5px 5px lightgrey;
+            border-radius: 5px;
+            margin: 10px 10px;
+            float: left;
+        }
+        #post-H{
+            background-color: deepskyblue;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            text-decoration: none;
+        }
+        #post-P{
+            font-size: smaller;
+        }
+    </style>
+</head>
 <body>
-  <h1> dkdkdkd</h1>
+<section class="Heading">
+    <h1><a href="http://ekdlfptm.github.io/" id="name1">윤정's Blog</a></h1><hr>
+    <ul class="menu">
+        <li id="menu1"><a href="intro.html" id="menu1-1">소개</a></li>
+        <li id="menu1"><a href="Class.html" id="menu1-1">2016년 1학기 수업</a></li>
+        <li id="menu1"><a href="ClassSheet.html" id="menu1-1">1학기 수업 시간표</a></li>
+        <li id="menu1"><a href="Page.html" id="menu1-1">자주 사용하는 페이지</a></li>
+    </ul><hr>
+    <form id="SearchBar">
+        <input type="text" name="search" />
+        <input type="submit" value="검색"/>
+    </form>
+    <div id="hansung"><a href="http://hansung.ac.kr" id="hansung">한성대학교 바로가기</a></div>
+</section><br><hr>
+<Section>
+    <div class="MainSection">
+        <p> 환영합니다!</p>
+    </div>
+    <div class="SubSection">
+        <ul style="font-size: smaller">
+            <li>소개</li>
+            <ol>
+                <li>이름 및 학력사항</li>
+                <li>좋아하는 것</li>
+                <li>취미 및 특기</li>
+            </ol>
+            <li>2016년 1학기 수업</li>
+            <ol>
+                <li>C programing</li>
+                <li>Web programing</li>
+                <li>JAVA</li>
+                <li>일반물리Ⅰ</li>
+            </ol>
+            <li>1학기 수업 시간표</li>
+            <li>자주 사용하는 페이지</li>
+        </ul>
+    </div>
+</Section>
+<section class="SubSection2">
+    <div class="player">
+        <audio src="music.mp3" controls="controls" autoplay="autoplay" id="player" ></audio>
+    </div>
+    <div id="SubSection2-2">
+        <a href="pic.html">
+            <img src="pic.jpg" width="180" height="150" id="pic1">
+        </a>
+        <p style="text-">★최근 찍은 사진★</p>
+    </div>
+</section>
+<section class="Bot">
+    <div><br> Other Post...<hr></div>
+    <div class="sect">
+        <h4 id="post-H"><a href="intro.html" id="post-H">소개</a></h4>
+        <p id="post-P">안녕하세요!<br><br>
+            학력<br>
+            - 한성대학교 한국어문학부 3학년 재학<br>
+            - IT응용시스템공학부 복수전공<br><br>
+            좋아하는 것<br>
+            - 음식 : 파스타<br>
+            - 운동 : 농구<br>
+            - 활동 : 밴드 활동......</p>
+
+    </div>
+    <div class="sect">
+        <h4 id="post-H"><a href="Class.html" id="post-H">2016학년도 1학기 수업</a></h4>
+        <p id="post-P">
+            C programing<br>
+            - 담당교수 : <br>
+            - 수업 시간 : <br>
+            Web programing<br>
+            - 담당교수 : 허준영 교수님<br>
+            - 수업 시간 : <br>
+            JAVA<br>
+            - 담당교수 : 허준영 교수님<br>
+            - 수업 시간 : <br>
+            일반물리Ⅰ...</p>
+    </div>
+    <div class="sect">
+        <h4 id="post-H"><a href="ClassSheet.html" id="post-H">1학기 수업 시간표</a></h4>
+        <p id="post-P">시간표</p>
+    </div>
+    <div class="sect">
+        <h4 id="post-H"><a href="Page.html" id="post-H">자주 사용하는 페이지</a></h4>
+        <p id="post-P">
+            네이버<br>
+            다음<br>
+            네이트<br>
+            한성대학교 홈페이지<br>
+            한성대 종합정보시스템<br>
+            Github.com<br>
+        </p>
+    </div>
+</section>
 </body>
 </html>
