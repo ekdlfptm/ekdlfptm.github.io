@@ -272,7 +272,10 @@
 </Section>
 <section class="SubBox2">
     <div class="player">
-        <audio src="single.mp3" controls="controls" autoplay="autoplay" loop="loop" id="player" ></audio>
+       <audio  controls autoplay loop preload id="player">
+        <source src="single.mp3" type="audio/mp3" />
+        <source src="sing.mp3"  type="audio/mp3"/>
+        </audio>
     </div>
     <div id="SubBox2_2">
         <image src="ekdlfptm.github.io/weather.PNG"></image>
