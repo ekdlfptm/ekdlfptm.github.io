@@ -13,10 +13,10 @@ function getAwords(words) {
 
 function getWordsBeginWith(words, begin_char) {
     var return_words = [];
-    var word_x=begin_char.toLowerCase();
-    var WORD_X=begin_char.toUpperCase();
+    var w_x=begin_char.toLowerCase();
+    var W_x=begin_char.toUpperCase();
 	for (var i = 0; i < words.length; i++) {
-		if (words[i].startsWith(word_x) || words[i].startWith(WORD_x))  
+		if (words[i].startsWith(w_x) || words[i].startWith(W_x))  
 			return_words.push(words[i]);
 	}
 	}
