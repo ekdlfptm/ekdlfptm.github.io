@@ -12,16 +12,16 @@ function getAwords(words) {
 }
 
 function getWordsBeginWith(words, begin_char) {
-    var return_words = [];
+    var return_words1 = [];
     var word_x=begin_char.toLowerCase();
     var WORD_X=begin_char.toUpperCase();
 	for (var i = 0; i < words.length; i++) {
-		if (words[0].startsWith(word_x)||words[0].startWith(WORD_x))  
+		if (words[i].startsWith(word_x) || words[i].startWith(WORD_x))  
 			return_words.push(words[i]);
 	}
 	}
 	
-	return return_words;
+	return return_words1;
 }
 
 var test = ['apple', 'Apple', 'banana', 'Blueberry', 'peach', 'Melon'];
