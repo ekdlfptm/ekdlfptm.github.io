@@ -12,7 +12,7 @@ function getAwords(words) {
 }
 
 function getWordsBeginWith(words, begin_char) {
-    var return_words1 = [];
+    var return_words = [];
     var word_x=begin_char.toLowerCase();
     var WORD_X=begin_char.toUpperCase();
 	for (var i = 0; i < words.length; i++) {
@@ -21,7 +21,7 @@ function getWordsBeginWith(words, begin_char) {
 	}
 	}
 	
-	return return_words1;
+	return return_words;
 }
 
 var test = ['apple', 'Apple', 'banana', 'Blueberry', 'peach', 'Melon'];
