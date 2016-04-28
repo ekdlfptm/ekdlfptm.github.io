@@ -13,7 +13,7 @@
             debug_text += "<p>operand:" + operand + "</p>";
             debug_out.innerHTML = debug_text;
             debug_out.style.color='orange';
-
+            debug_out.style.border=10+'px'+'solid'+'#FFFFFF';
         }
 
         function button_click() {
@@ -75,6 +75,7 @@
             var text = document.getElementById("text_display");
             text.value = '';
             operand = '';
+            first_val='';
 
             display_debug();
         }
