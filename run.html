@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>프레임 애니메이션</title>
+</head>
+<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+<style>
+    #image{
+        position: absolute;
+        left:0px;
+    }
+
+</style>
+<script>
+    $(document).ready(function() {
+        var count=0;
+        var num=10;
+        var frames=['0.png','1.png','2.png','3.png','4.png','5.png','6.png','7.png','8.png','9.png','10.png'
+            ,'11.png','12.png','13.png','14.png',];
+        var obj=$('#image').offset();
+
+        setInterval(function(){
+            $('#image').attr("src",frames[count % frames.length]);
+            $('#image').css("left",obj.left+num);
+            count=count+1;
+            num=num+20;
+            if(num>1000) num=10;
+        },1000/20);
+
+    });
+
+</script>
+
+<body>
+<div>
+    <img id="image"/>
+</div>
+
+</body>
+</html>
