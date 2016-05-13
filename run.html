@@ -24,8 +24,11 @@
             $('#image').attr("src",frames[count % frames.length]);
             $('#image').css("left",obj.left+num);
             count=count+1;
-            num=num+20;
-            if(num>1000) num=10;
+            num=num+5;
+            if(num>500) num=10;
+            $('#image').click(function(){
+                num=10;
+            })
         },1000/20);
 
     });
