@@ -66,6 +66,16 @@
             if (operand == 'plus') {
                 text.value = '' + (first_val + second_val);
             }
+             if (operand == 'minus') {
+                text.value = '' + (first_val - second_val);
+            }
+             if (operand == 'multiplication') {
+                text.value = '' + (first_val * second_val);
+            }
+             if (operand == 'division') {
+                text.value = '' + (first_val / second_val);
+            }
+            
             operand = '';
 
             display_debug();
